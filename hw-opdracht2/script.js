@@ -17,7 +17,7 @@ if(aantal == 3 && duur > 3){
 if(aantal > 2 || streaming == true ){
     alert();
     abonnement = "uitgebreid";
-    document.getElementById("resultaat").innerHTML = abonnement;
+    
 
 //als je met 2 personen kijkt of meer dan 4 uur per dag dan is het abonnement standaard
 //pseudocode: 
@@ -30,6 +30,12 @@ if(aantal > 2 || duur > 4 ){
 
 // als je met 1 persoon kijkt en 6 of meer uur per dag dan is het abonnement uitgebreid
 //pseudocode: 
+if(aantal == 1 && duur >= 6  ){
+    alert();
+    abonnement = "uitgebreid";
+}
+    {document.getElementById("resultaat").innerHTML = abonnement;
+}
 
 
 //toon het type abonnement op het scherm
